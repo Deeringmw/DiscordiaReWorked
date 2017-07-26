@@ -181,16 +181,6 @@ namespace DiscordiaReWorked
                        rmDiff.Seconds);
     await e.Channel.SendMessage(rmFormatted);
 
-    DateTime gotRelease = new DateTime(2017, 7, 16, 21, 0, 0, 0);
-    TimeSpan gotDiff = gotRelease - DateTime.Now;
-    string gotString = string.Format(
-                           "Game of Thrones: {0} days, {1} hours, {2} minutes, {3} seconds!",
-                           gotDiff.Days,
-                           gotDiff.Hours,
-                           gotDiff.Minutes,
-                           gotDiff.Seconds);
-    await e.Channel.SendMessage(gotString);
-
 
 });
 
