@@ -75,13 +75,14 @@ namespace DiscordiaReWorked
                         var dps4job = GetJobFromId(theEvent.dps4);
                         var sb = new StringBuilder();
 
+                        string notSigned = "Position Open";
                         if (tank1job != null)
                         {
                             sb.Append($"\n :white_check_mark: :shield: {tank1job.name}");
                         }
                         else
                         {
-                            sb.Append("\n :x: :shield: http://jtmiles.xyz/aof/home");
+                            sb.Append($"\n :x: :shield: {notSigned}");
                         }
                         if (tank2job != null)
                         {
@@ -89,7 +90,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :shield: http://jtmiles.xyz/aof/home");
+                            sb.Append($"\n :x: :shield: {notSigned}");
                         }
                         if (healer1job != null)
                         {
@@ -97,7 +98,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :heartpulse: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :heartpulse: {notSigned}");
                         }
                         if (healer2job != null)
                         {
@@ -105,7 +106,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :heartpulse: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :heartpulse: {notSigned}");
                         }
                         if (dps1job != null)
                         {
@@ -113,7 +114,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :crossed_swords: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :crossed_swords: {notSigned}");
                         }
                         if (dps2job != null)
                         {
@@ -121,7 +122,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :crossed_swords: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :crossed_swords: {notSigned}");
                         }
                         if (dps3job != null)
                         {
@@ -129,7 +130,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :crossed_swords: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :crossed_swords: {notSigned}");
                         }
                         if (dps4job != null)
                         {
@@ -137,7 +138,7 @@ namespace DiscordiaReWorked
                         }
                         else
                         {
-                            sb.Append("\n :x: :crossed_swords: http://jtmiles.xyz/aof/home ");
+                            sb.Append($"\n :x: :crossed_swords: {notSigned}");
                         }
                         await e.Channel.SendMessage($"**{theEvent.name}** {theEvent.start_time} {sb.ToString()}");
 
